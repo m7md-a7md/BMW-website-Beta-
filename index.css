@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: aliceblue;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+
+}
+.logo{
+    text-decoration: none;
+    color:#3b4753;
+    font-family: "Tourney", sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: #4187ca;
+    text-decoration: none;
+    /* font-size: 1.8em; */
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color: rgb(40, 37, 37);
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image:url(img/tyler-clemmensen-wLpTPp2dzsY-unsplash.jpg) ;
+    background-size:cover ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+}
+.main h2 {
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.main span { 
+    display: inline-block;
+    color:hwb(210 17% 2%);
+    font-size: 4em;
+    font-weight: 800;
+}
+.main h3{
+    color: white;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.main-products{
+    color: black;
+    background-color: white;
+    text-decoration: none ;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: .1em .6em;
+    letter-spacing: 1px ;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    transition: 0.7s ease;
+
+}
+.main-products:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+.title{
+   color: hwb(0 0% 100%);
+   font-size: 2.2em;
+   font-family: "Playfair Display", serif;
+   font-optical-sizing: auto;
+   font-weight: weight;
+   font-style: normal;
+   font-weight: 700;
+
+
+}
+.cars{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.car1{
+    background-color: rgb(171, 167, 167);
+    width: 30em;
+    overflow: hidden;
+    min-height: 14em;
+    border: 1px solid rgb(171, 167, 167);
+    border-radius: 1px;
+    padding: 2px;
+    margin: 20px;
+    transition: 0.7s ease;
+    
+}
+.products{
+    background-color: rgb(185, 181, 181); 
+}
+.car1:hover{
+    transform: scale(1.1);
+
+}
+.img img{
+    width: 100%; 
+}
+.img-2 img{
+    width: 10%;
+    
+}
+.img-2 {
+    display:flex;
+    justify-content: space-between;
+}
+
+.info{
+    padding: 10Px;
+}
+.type-car{
+    display: flex;
+    justify-content :space-between;
+    padding: 10Px;
+}
+.more-details{
+    text-decoration: none;
+    color: #030303;
+    font-weight: 700;
+}
+.more-details:hover{
+    color: rgb(17, 24, 232);
+
+}
+.type{
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 5px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main h2{
+        font-size: 1em;
+    }
+
+    .main h3{
+        font-size: 1.6em;
+    }
+
+    .products{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-products h2{
+        font-size: 0.8em;
+    }
+
+    .main-products h3{
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+}
